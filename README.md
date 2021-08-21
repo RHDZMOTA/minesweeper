@@ -7,7 +7,13 @@ in python.
 
 ## Installation
 
-You can clone this repository and install the `minesweeper` package with: 
+Install this application using pip directly referencing the dev branch from github:
+
+```commandline
+$ pip install git+https://github.com/rhdzmota/minesweeper.git@dev#subdirectory=minesweeper&egg=minesweeper
+```
+
+Alteratively, you can clone this repository and install the `minesweeper` package with: 
 
 ```commandline
 $ pip install -e minesweeper
