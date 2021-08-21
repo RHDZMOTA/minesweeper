@@ -16,9 +16,9 @@ class CLI:
         parser = argparse.ArgumentParser()
         parser.add_argument("--timeout", type=int, default=100)
         parser.add_argument("--grid", type=str, default=DEFAULT_GRID)
-        self.args = parser.parse_args()
-        self.grid = Grid.from_string(self.args.grid)
-        self.solver_instance = Solver(grid=self.grid)
-        self.solver_instance.run(timeout=self.args.timeout)
-        if self.solver_instance.finished():
-            self.solver_instance.final_state.show()
+        args = parser.parse_args()
+        grid = Grid.from_string(args.grid)
+        solver_instance = Solver(grid=grid)
+        solver_instance.run(timeout=args.timeout)
+        if solver_instance.finished():
+            solver_instance.final_state.show()
