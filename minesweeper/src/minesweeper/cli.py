@@ -19,8 +19,6 @@ class CLI:
         self.args = parser.parse_args()
         self.grid = Grid.from_string(self.args.grid)
         self.solver_instance = Solver(grid=self.grid)
-
-    def run(self):
         self.solver_instance.run(timeout=self.args.timeout)
         if self.solver_instance.finished():
             self.solver_instance.final_state.show()
