@@ -19,7 +19,7 @@ Alteratively, you can clone this repository and install the `minesweeper` packag
 $ pip install -e minesweeper
 ```
 
-Test by running: `minesweeper --help`
+Test by running: `minesweeper --help` or `python -m minesweeper --help`
 
 ## CLI Usage
 
